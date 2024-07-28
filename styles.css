@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.left-side, .right-side {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.name-choice {
+  margin-bottom: 20px;
+}
+
+.name-choice label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.name-choice input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.name-choice input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.symbol-choice {
+  display: flex;
+  gap: 10px;
+}
+
+.symbol-choice button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.symbol-choice .x-button {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.symbol-choice .o-button {
+  background-color: #4d94ff;
+  color: #fff;
+}
+
+.symbol-choice button:hover {
+  transform: scale(1.05);
+}
+
+.right-side {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.box:hover {
+  background-color: #ccc;
+}
+
+.dialog {
+  border: none;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
